@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Cursed Timer ULiL'; 
+    src: url('./assets/font/CursedTimerUlil-Aznm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F0F3FB;
+}
+
+.container {
+    width: 879px;
+    background: #F0F3FB;
+    display: block;
+    margin: 100px auto 0 auto;
+    border-radius: 29px;
+    box-shadow: 
+    8px 8px 16px rgba(0, 0, 0, 0.15),
+    -8px -8px 16px rgba(255, 255, 255, 0.8);
+}
+
+
+.home-guest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home, .guest {
+    margin: 24px 16px 24px 16px;
+}
+
+.home h1 {
+    color: #0C2340;
+    font-size: 40px;
+    margin: 0;
+}
+
+.guest h1 {
+   color: #D60132;
+   font-size: 40px;
+   margin: 0;
+}
+
+.guest .scoreboard {
+    background-color: #D60132;
+    color: #D60132;
+}
+
+.home .scoreboard {
+    background-color: #0C2340;
+    color: #0C2340;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: ;
+    border-radius: 27px;
+    width: 385px;
+    height: 127.5px;
+    margin: 20px 0;
+    box-shadow: 5px 10px 18px 0px rgba(0, 0, 0, 0.06);
+}
+
+.scoreboard p {
+    font-family: 'Cursed Timer ULiL', monospace;
+    color: white;
+    font-size: 90px;
+    padding: 16px 16px 0 0;
+}
+
+.calc-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+btn {
+    font-family: 'Cursed Timer ULiL', monospace;
+    font-size: 24px;
+    margin-left: 24px;
+    border-radius: 15px;
+    padding: 20px 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1),
+    -3px -3px 6px rgba(255, 255, 255, 0.7);
+}
+
+btn:active {
+    box-shadow: 
+    inset 3px 3px 6px rgba(0, 0, 0, 0.1),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.7);
+}
+
+.home .calc-btns btn:hover {
+    background: #0C2340;
+    color: white;
+}
+
+.guest .calc-btns btn:hover {
+    background: #D60132;
+    color: white;
+}
+
+.more-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container {
+    width: 245px;
+    font-family: 'Cursed Timer ULiL', monospace;
+    font-size: 40px;
+    line-height: 0;
+    border-radius: 15px;
+    box-shadow: 
+    inset 3px 3px 6px rgba(0, 0, 0, 0.1),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.7);
+    margin: 0 16px 24px 16px;
+}
+
+.blink {
+    animation: fade-blink 3s ease-in-out infinite;
+}
+
+@keyframes fade-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

@@ -1,47 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container container-shadow">
-            <div class="home-guest">
-                <div class="home">
-                    <h1>HOME</h1>
-                    <div class="scoreboard">
-                        <img src="./assets/images/antonio.png" alt="San Antonio Spurs Basketball Team Logo">
-                        <p id="home-point">0</p>
-                    </div>
-                    <div class="calc-btns">
-                        <btn onclick="homeAdd1()">+1</btn>
-                        <btn onclick="homeAdd2()">+2</btn>
-                        <btn onclick="homeAdd3()">+3</btn>
-                    </div>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Vs Knicks</title>
+</head>
+
+<body>
+    <div class="container container-shadow">
+        <div class="home-guest">
+            <div class="home">
+                <h1>HOME</h1>
+                <div class="scoreboard">
+                    <img src="./assets/images/antonio.png" alt="San Antonio Spurs Basketball Team Logo">
+                    <p id="home-point">0</p>
                 </div>
-                <div class="guest">
-                    <h1>GUEST</h1>
-                    <div class="scoreboard">
-                        <img src="./assets/images/knicks.png" alt="New York Knicks Basketball Team Logo">
-                        <p id="guest-point">0</p>
-                    </div>
-                    <div class="calc-btns">
-                        <btn onclick="guestAdd1()">+1</btn>
-                        <btn onclick="guestAdd2()">+2</btn>
-                        <btn onclick="guestAdd3()">+3</btn>
-                    </div>
+                <div class="calc-btns">
+                    <btn onclick="homeAdd1()">+1</btn>
+                    <btn onclick="homeAdd2()">+2</btn>
+                    <btn onclick="homeAdd3()">+3</btn>
                 </div>
             </div>
-            <div class="more-info">
-                <div class="info-container quarter">
-                    <p>3rd Qtr</p>
+            <div class="guest">
+                <h1>GUEST</h1>
+                <div class="scoreboard">
+                    <img src="./assets/images/knicks.png" alt="New York Knicks Basketball Team Logo">
+                    <p id="guest-point">0</p>
                 </div>
-                <div class="info-container clock">
-                    <p class="blink">2:59</p>
+                <div class="calc-btns">
+                    <btn onclick="guestAdd1()">+1</btn>
+                    <btn onclick="guestAdd2()">+2</btn>
+                    <btn onclick="guestAdd3()">+3</btn>
                 </div>
             </div>
         </div>
-        
-        
-        <script src="./script.js"></script>
-    </body>
+        <div class="more-info">
+            <div class="info-container quarter">
+                <p>3rd Qtr</p>
+            </div>
+            <div class="info-container clock">
+                <p class="blink">2:59</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
 </html>
